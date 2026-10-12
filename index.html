@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0b0d14">
-<title>Normanhurst GD Lists</title>
+<title>Normanhurst Boys GD Hub</title>
 <style>
   :root{color-scheme:dark;--bg:#0b0d14;--panel:#121724;--panel2:#171e2d;--line:#293249;--text:#f2f5ff;--muted:#9ca8c4;--green:#65f5a4;--purple:#a895ff;--pink:#ff78c8;--yellow:#ffd875;--danger:#ff8585;--radius:18px;}
   *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(ellipse at 15% -5%,rgba(85,255,168,.11),transparent 34rem),radial-gradient(ellipse at 100% 0%,rgba(153,113,255,.13),transparent 36rem),var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -27,34 +27,34 @@
         automatically; you review suggestions and edit the lists.
      ========================================================= -->
 <script>
-const CONTACT_EMAIL = "alaz.senyurt@education.nsw.gov.au"; // <-- CHANGE THIS
+const CONTACT_EMAIL = "your-email@example.com"; // Replace with an address you choose to receive submissions
 const SCHOOL_NAME = "Normanhurst Boys High School";
 
-// LIST 1: Hardest qualifying completions. Only Hard, Insane and Extreme Demons count.
-// For Extreme Demons, enter that level's current AREDL list points in aredlPoints.
-// Hard Demon = 0.2 points; Insane Demon = 0.5 points; Extreme Demon = AREDL points.
-// Video links are optional. No proof is required.
+// LIST 1: Only Hard, Insane and Extreme Demon completions count.
+// Hard Demon = 0.2 points; Insane Demon = 0.5 points; Extreme Demon = the level's AREDL points.
+// Extreme Demon points are entered manually and should be checked against AREDL.
+// Video links are optional. No proof is required. Leave unknown dates as an empty string.
 const COMPLETIONS = [
-  { level: "Acu", player: "{PineappleFan123}", difficulty: "Extreme Demon", date: "2026-9/10-?", aredlPoints: 1.2, video: "" },
-  {level: "Cataclysm", player: "QriticerFerret", difficulty: "Extreme Demon", date: "2026-7-21", aredlPoints: 4.2, video: "" }, { 
-  { level: "Rainway", player: "{PineappleFan123}", difficulty: "Insane Demon", date: "2026-?-?", aredlPoints: 0.5, video: "" },
-  { level: "Future Funk", player: "{QriticerFerret}", difficulty: "Hard Demon", date: "2026-?-?", aredlPoints: 0.2, video: "" },
-  { level: "Shadow Temple", player: "{QriticerFerret}", difficulty: "Hard Demon", date: "2026-?-?", aredlPoints: 0.2, video: "" },
-  { level: "Beat Ninja", player: "{QriticerFerret}", difficulty: "Insane Demon", date: "2026-?-?", aredlPoints: 0.5, video: "" },
-  { level: "Denouement", player: "{QriticerFerret}", difficulty: "Insane Demon", date: "2026-?-?", aredlPoints: 0.5, video: "" },
+  { level: "Acu", player: "PineappleFan123", difficulty: "Extreme Demon", date: "", aredlPoints: 1.2, video: "" },
+  { level: "Cataclysm", player: "QriticerFerret", difficulty: "Extreme Demon", date: "2026-07-21", aredlPoints: 4.2, video: "" },
+  { level: "Rainway", player: "PineappleFan123", difficulty: "Insane Demon", date: "", video: "" },
+  { level: "Future Funk", player: "QriticerFerret", difficulty: "Hard Demon", date: "", video: "" },
+  { level: "Shadow Temple", player: "QriticerFerret", difficulty: "Hard Demon", date: "", video: "" },
+  { level: "Beat Ninja", player: "QriticerFerret", difficulty: "Insane Demon", date: "", video: "" },
+  { level: "Denouement", player: "QriticerFerret", difficulty: "Insane Demon", date: "", video: "" }
 ];
 
-// LIST 2: Players to show on the leaderboard, including players with no recorded points yet.
-// Their scores are calculated from qualifying completions above. Add each player's name here.
+// LIST 2: Add players here even if they do not have recorded points yet.
+// Scores are calculated from COMPLETIONS, not entered manually.
 const PLAYERS = [
   { name: "QriticerFerret" },
-  { name: "PineappleFan123" },
+  { name: "PineappleFan123" }
 ];
 
-// LIST 3: Active collabs. Remove a collab when it is no longer recruiting.
+// LIST 3: Remove a collab when it is no longer recruiting.
 const COLLABS = [
-  { name: "Five Pieces", host: "QriticerFerret", status: "Recruiting", positions: ["Gameplay", "Decoration"], description: "An XL insane-extreme demon with 5 acts based on the 5 tame impala albums, more info on discord.", contact: "Discord: QriticerFerret", link: "https://discord.com/users/1557535589929066497" },
- 
+  { name: "Five Pieces", host: "QriticerFerret", status: "Recruiting", positions: ["Gameplay", "Decoration"], description: "An XL insane-extreme demon with five acts based on the five Tame Impala albums. More information on Discord.", contact: "Discord: QriticerFerret", link: "https://discord.com/users/1557535589929066497" }
+];
 </script>
 <header class="topbar"><div class="wrap nav"><a class="brand" href="#top" aria-label="Normanhurst Boys High School GD Hub home"><span class="cube">G</span><span>NORMANHURST BOYS HIGH SCHOOL <span style="color:var(--green)">GD</span> HUB</span></a><nav class="navlinks" aria-label="Main navigation"><a href="#records">Completions</a><a href="#rankings">Rankings</a><a href="#collabs">Collabs</a><a href="#submit">Submit an update ↗</a></nav></div></header>
 <main class="wrap" id="top">
@@ -65,25 +65,42 @@ const COLLABS = [
   <section id="rankings"><div class="section-head"><div><div class="kicker">02 / The leaderboard</div><h2>Player rankings</h2><p>Scores are calculated from recorded completions and sorted automatically. Extreme Demon values use AREDL list points.</p></div><div class="section-number">02</div></div><div class="panel"><div class="toolbar"><input class="search" id="player-search" type="search" placeholder="Search players…" aria-label="Search players"><span class="small-muted" id="player-count"></span></div><div class="table-wrap"><table style="min-width:520px"><thead><tr><th>Rank</th><th>Player</th><th>List points</th><th>Hardest</th></tr></thead><tbody id="player-rows"></tbody></table></div><div class="empty hidden" id="player-empty">No matching players found.</div></div></section>
   <section id="collabs"><div class="section-head"><div><div class="kicker">03 / Find your next project</div><h2>Active collabs</h2><p>Find a project, check the open roles and contact its host.</p></div><div class="section-number">03</div></div><div class="toolbar" style="padding:0 0 14px;border:0"><input class="search" id="collab-search" type="search" placeholder="Search collabs or roles…" aria-label="Search collabs"><span class="small-muted" id="collab-count"></span></div><div class="cards" id="collab-cards"></div><div class="empty panel hidden" id="collab-empty">No matching collabs found.</div></section>
   <section id="submit"><div class="section-head"><div><div class="kicker">Community submissions</div><h2>Got an update?</h2><p>Send a suggestion. Official lists only change after the site owner reviews it.</p></div></div><div class="submit-grid"><div class="panel submit-note"><span class="eyebrow"><span class="dot"></span> Community-powered</span><h3>Send the news.<br><span style="color:var(--purple)">I'll review it.</span></h3><p>Share a new Hard, Insane or Extreme Demon completion, a leaderboard correction or a collab looking for members. A completion video is optional.</p><div class="note-list"><div class="note-item"><span class="check">✓</span><span>Submissions do not change the official lists automatically.</span></div><div class="note-item"><span class="check">✓</span><span>Completion videos are optional; no proof is required.</span></div><div class="note-item"><span class="check">✓</span><span>Don't include private information in submissions.</span></div></div></div>
-    <form class="panel form-card" id="submission-form"><div class="form-grid"><div class="field"><label for="submission-type">What is this about?</label><select id="submission-type" required><option value="Hardest completion">New hardest completion</option><option value="Leaderboard correction">Leaderboard correction</option><option value="New collab">New collab / recruitment</option><option value="Other update">Other update</option></select></div><div class="field"><label for="submitter">Your name / GD username</label><input id="submitter" name="submitter" required maxlength="80" placeholder="Your username"></div><div class="field full"><label for="details">Details</label><textarea id="details" name="details" required maxlength="1500" placeholder="Level, player, points, collab roles, or what needs changing…"></textarea></div><div class="field full"><label for="proof">Completion video (optional)</label><input id="proof" name="proof" type="url" placeholder="https://…"><span class="hint">Optional YouTube or other video link. No proof is required.</span></div><div class="field full"><label for="reply">Contact (optional)</label><input id="reply" name="reply" maxlength="120" placeholder="Discord username or other contact"></div></div><div class="form-actions"><button class="btn primary" type="submit">Prepare submission ↗</button><span class="small-muted">Opens an email draft for you to send.</span></div><p class="notice" id="form-notice" role="status"></p></form></div></section>
+    <form class="panel form-card" id="submission-form"><div class="form-grid"><div class="field"><label for="submission-type">What is this about?</label><select id="submission-type" required><option value="Hardest completion">New hardest completion</option><option value="Leaderboard correction">Leaderboard correction</option><option value="New collab">New collab / recruitment</option><option value="Other update">Other update</option></select></div><div class="field"><label for="submitter">Your name / GD username</label><input id="submitter" name="submitter" required maxlength="80" placeholder="Your username"></div><div class="field full"><label for="details">Details</label><textarea id="details" name="details" required maxlength="1500" placeholder="Level, player, points, collab roles, or what needs changing…"></textarea></div><div class="field full"><label for="proof">Completion video (optional)</label><input id="proof" name="proof" type="url" placeholder="https://…"><span class="hint">Optional YouTube or other video link. No proof is required.</span></div><div class="field full"><label for="reply">Contact (optional)</label><input id="reply" name="reply" maxlength="120" placeholder="Discord username or other contact"></div></div><div class="form-actions"><button class="btn primary" type="submit">Prepare submission ↗</button><span class="small-muted">Opens an email draft for you to send.</span></div><p class="notice" id="form-notice" role="status">Before sharing this page, replace the example CONTACT_EMAIL in the code with the address that should receive submissions.</p></form></div></section>
   <footer class="footer"><span><strong>NORMANHURST BOYS HIGH SCHOOL GD HUB</strong> · Unofficial community tracker</span><span>Fan-made project · Not affiliated with RobTop Games</span></footer>
 </main>
 <script>
 const $ = (id) => document.getElementById(id);
 const esc = (value) => String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
 const safeUrl = (value) => { try { const u = new URL(value); return ["http:","https:"].includes(u.protocol) ? u.href : ""; } catch { return ""; } };
-const dateLabel = (date) => { if (!date) return "—"; const d = new Date(date + "T12:00:00"); return Number.isNaN(d.getTime()) ? esc(date) : d.toLocaleDateString(undefined,{day:"numeric",month:"short",year:"numeric"}); };
+const dateLabel = (date) => {
+  if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return "—";
+  const d = new Date(date + "T12:00:00");
+  return Number.isNaN(d.getTime()) ? "—" : d.toLocaleDateString(undefined,{day:"numeric",month:"short",year:"numeric"});
+};
 const videoLink = (value) => { const url = safeUrl(value); return url ? '<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">Watch video ↗</a>' : '<span class="small-muted">—</span>'; };
 const completionPoints = (x) => { const d=(x.difficulty||"").toLowerCase(); if(d==="hard demon") return 0.2; if(d==="insane demon") return 0.5; if(d==="extreme demon") return Math.max(0,Number(x.aredlPoints)||0); return 0; };
 const pointsLabel = (n) => Number(n.toFixed(2)).toString();
 const collabLink = (value) => { const url = safeUrl(value); return url ? '<a class="btn purple" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">Join / details ↗</a>' : '<span class="small-muted">Contact host</span>'; };
+function difficultyRank(x){
+  const d=(x.difficulty||"").toLowerCase();
+  return d==="extreme demon" ? 3 : d==="insane demon" ? 2 : d==="hard demon" ? 1 : 0;
+}
+function compareHardest(a,b){
+  const tier=difficultyRank(b)-difficultyRank(a);
+  if(tier) return tier;
+  if((a.difficulty||"").toLowerCase()==="extreme demon") {
+    const points=(Number(b.aredlPoints)||0)-(Number(a.aredlPoints)||0);
+    if(points) return points;
+  }
+  return (b.date||"").localeCompare(a.date||"") || a.level.localeCompare(b.level);
+}
 function qualifyingCompletions(){
   return COMPLETIONS.filter(x=>["hard demon","insane demon","extreme demon"].includes((x.difficulty||"").toLowerCase()));
 }
 function renderCompletions(){
   const q = $("completion-search").value.trim().toLowerCase();
   const all = qualifyingCompletions();
-  const data = [...all].sort((a,b)=>(b.date||"").localeCompare(a.date||"") || a.level.localeCompare(b.level)).filter(x=>[x.level,x.player,x.difficulty,x.date].join(" ").toLowerCase().includes(q));
+  const data = [...all].sort(compareHardest).filter(x=>[x.level,x.player,x.difficulty,x.date].join(" ").toLowerCase().includes(q));
   $("completion-rows").innerHTML = data.map(x=>`<tr><td><span class="level-name">${esc(x.level)}</span></td><td><span class="player-name">${esc(x.player)}</span></td><td><span class="pill">${esc(x.difficulty)}</span></td><td><strong style="color:var(--green)">${pointsLabel(completionPoints(x))}</strong><span class="subline">${x.difficulty==="Extreme Demon"?"AREDL points":"school points"}</span></td><td>${dateLabel(x.date)}</td><td>${videoLink(x.video)}</td></tr>`).join("");
   $("completion-count").textContent = `${data.length} shown · ${all.length} total`; $("completion-empty").classList.toggle("hidden",data.length!==0);
 }
@@ -95,7 +112,7 @@ function renderPlayers(){
   for (const name of totals.keys()) if(!playerNames.has(name.toLowerCase())) playerNames.set(name.toLowerCase(),{name,hardest:""});
   const all = [...playerNames.values()].map(x=>({...x,points:totals.get(x.name)||[...totals.entries()].find(([n])=>n.toLowerCase()===x.name.toLowerCase())?.[1]||0})).sort((a,b)=>b.points-a.points||a.name.localeCompare(b.name));
   const data = all.filter(x=>[x.name,x.hardest,x.points].join(" ").toLowerCase().includes(q));
-  $("player-rows").innerHTML = data.map(x=>{const rank=all.indexOf(x)+1;const icon=rank===1?"✦":rank===2?"◆":rank===3?"▲":rank;const hardest=x.hardest||[...qualifyingCompletions()].filter(c=>c.player.toLowerCase()===x.name.toLowerCase()).sort((a,b)=>completionPoints(b)-completionPoints(a))[0]?.level||"—";return `<tr><td class="rank">${icon}</td><td><span class="player-name">${esc(x.name)}</span></td><td><strong style="color:var(--green)">${pointsLabel(x.points)}</strong><span class="subline">points</span></td><td>${esc(hardest)}</td></tr>`}).join("");
+  $("player-rows").innerHTML = data.map(x=>{const rank=all.indexOf(x)+1;const icon=rank===1?"✦":rank===2?"◆":rank===3?"▲":rank;const hardest=x.hardest||[...qualifyingCompletions()].filter(c=>c.player.toLowerCase()===x.name.toLowerCase()).sort(compareHardest)[0]?.level||"—";return `<tr><td class="rank">${icon}</td><td><span class="player-name">${esc(x.name)}</span></td><td><strong style="color:var(--green)">${pointsLabel(x.points)}</strong><span class="subline">points</span></td><td>${esc(hardest)}</td></tr>`}).join("");
   $("player-count").textContent = `${data.length} shown · ${all.length} total`; $("player-empty").classList.toggle("hidden",data.length!==0);
 }
 function renderCollabs(){
